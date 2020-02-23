@@ -1,0 +1,22 @@
+body {
+    &::-webkit-scrollbar-track {
+	    background-color: #222;
+    }
+
+    &::-webkit-scrollbar
+    {
+	    width: 4px;
+        background-color: #222;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+        background-color: #FF7851;
+    }
+
+    overflow-y: hidden;
+
+    &.loaded {
+        overflow-y: auto;
+    }
+}

@@ -1,0 +1,13 @@
+.navbar {
+    transition: ease-in-out .25s;
+}
+
+.main-carousel {
+    max-height: 100vh;
+
+    & .carousel-inner {
+        &, & .carousel-item {
+            max-height: 100vh;
+        }
+    }
+}

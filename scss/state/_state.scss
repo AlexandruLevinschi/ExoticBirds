@@ -1,0 +1,34 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-24p {
+    font-size: 24px;
+}
+
+.flex-100 {
+    flex: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-md-100 {
+        width: 100% !important;
+    }
+
+    .flex-md-50 {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .flex-lg-25 {
+        flex: 25%;
+        max-width: 25%;
+    }
+}
