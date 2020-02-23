@@ -28,12 +28,32 @@ html, body {
   transition: ease-in-out .25s;
 }
 
+.navbar.navbar-opened {
+  background-color: #FF7851 !important;
+}
+
 .main-carousel {
   max-height: 100vh;
 }
 
 .main-carousel .carousel-inner, .main-carousel .carousel-inner .carousel-item {
   max-height: 100vh;
+}
+
+footer {
+  background-color: #222;
+}
+
+footer, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p {
+  color: #fff;
+}
+
+footer .footer-brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 8px;
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .birdLoader {
@@ -298,6 +318,11 @@ html, body {
   z-index: -9999;
 }
 
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
 .services .service {
   margin-bottom: 32px;
   max-width: 605px;
@@ -345,6 +370,19 @@ html, body {
   transition: ease-in-out .2s;
 }
 
+.input-group-text {
+  min-width: 45px;
+  background-color: #353535 !important;
+  border-color: #282828 !important;
+  color: #fff;
+}
+
+.form-control {
+  background-color: #353535 !important;
+  border-color: #282828 !important;
+  color: #fff !important;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -366,6 +404,10 @@ html, body {
 
 .overflow-x-hidden {
   overflow-x: hidden !important;
+}
+
+.mw-400p {
+  max-width: 400px;
 }
 
 @media (min-width: 768px) {

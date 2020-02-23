@@ -1,5 +1,9 @@
 .navbar {
     transition: ease-in-out .25s;
+
+    &.navbar-opened {
+        background-color: $color-danger !important;
+    }
 }
 
 .main-carousel {
@@ -9,5 +13,21 @@
         &, & .carousel-item {
             max-height: 100vh;
         }
+    }
+}
+
+footer {
+    background-color: #222;
+
+    &, h1, h2, h3, h4, h5, h6, p {
+        color: #fff;
+    }
+
+    .footer-brand {
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-left: 8px;
+        font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
 }

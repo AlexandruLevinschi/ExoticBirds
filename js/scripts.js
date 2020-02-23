@@ -10,12 +10,31 @@ $(function () {
     baguetteBox.run(".gallery");
 
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 300) {
+        if ($(document).scrollTop() > 200) {
             $(".navbar").removeClass("bg-transparent").addClass("bg-danger");
         } else {
             $(".navbar").removeClass("bg-danger").addClass("bg-transparent");
         }
     });
+
+    $(".nav-link").click(function () {
+        var target = $(`${$(this).data("target")}`);
+        $('html, body').animate({
+            scrollTop: target.offset().top - 65
+        }, 1000);
+
+        $(this).parents(".collapse").collapse("hide");
+    });
+
+    $('#main-navbar')
+        .on('show.bs.collapse', function () {
+            var navbar = $(this).parents(".navbar");
+            navbar.addClass("navbar-opened");
+        })
+        .on('hide.bs.collapse', function () {
+            var navbar = $(this).parents(".navbar");
+            navbar.removeClass("navbar-opened");
+        });
 });
 
 function randomIntFromInterval(min, max) {

@@ -13,6 +13,11 @@
     }
 }
 
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+}
+
 .services {
     .service {
         margin-bottom: 32px;
@@ -53,4 +58,17 @@
         font-size: 32px;
         transition: ease-in-out .2s;
     }
+}
+
+.input-group-text {
+    min-width: 45px;
+    background-color: #353535 !important;
+    border-color: darken(#353535, 5%) !important;
+    color: #fff;
+}
+
+.form-control {
+    background-color: #353535 !important;
+    border-color: darken(#353535, 5%) !important;
+    color: #fff !important;
 }
