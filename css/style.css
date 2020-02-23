@@ -1,5 +1,6 @@
 body {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar-track {
@@ -294,10 +295,41 @@ body.loaded {
   z-index: -9999;
 }
 
+.services .service {
+  margin-bottom: 32px;
+  max-width: 605px;
+  text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .services .service {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.services .service:hover .services-icon {
+  background-color: #F3969A;
+}
+
+.services .service:nth-child(2n) {
+  text-align: left;
+  margin-left: auto;
+}
+
+.services .service:nth-child(2n) .d-block {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding-right: 0 !important;
+  padding-left: 16px;
+}
+
 .services .d-block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding-right: 16px;
 }
 
 .services .services-icon {
@@ -306,10 +338,8 @@ body.loaded {
   background-color: #FF7851;
   color: #FFFFFF;
   font-size: 32px;
-}
-
-.services .services-icon:hover {
-  background-color: #F3969A;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
 }
 
 .uppercase {

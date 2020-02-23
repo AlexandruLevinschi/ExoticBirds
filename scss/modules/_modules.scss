@@ -14,8 +14,35 @@
 }
 
 .services {
+    .service {
+        margin-bottom: 32px;
+        max-width: 605px;
+        text-align: right;
+
+        @media screen and (max-width: 1200px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &:hover .services-icon {
+            background-color: $color-secondary;
+        }
+    }
+
+    .service:nth-child(2n) {
+        text-align: left;
+        margin-left: auto;
+
+        .d-block {
+            order: 1;
+            padding-right: 0 !important;
+            padding-left: 16px;
+        }
+    }
+
     .d-block {
         flex: 1;
+        padding-right: 16px;
     }
 
     .services-icon {
@@ -24,9 +51,6 @@
         background-color: $color-danger;
         color: #FFFFFF;
         font-size: 32px;
-    
-        &:hover {
-            background-color: $color-secondary;
-        }
+        transition: ease-in-out .2s;
     }
 }

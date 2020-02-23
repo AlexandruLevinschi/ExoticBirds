@@ -5,6 +5,8 @@ $(function () {
         $(window).scrollTop(0);
     }, randomIntFromInterval(500, 1500));
 
+    AOS.init();
+
     baguetteBox.run(".gallery");
 
     $(window).scroll(function () {
@@ -13,7 +15,7 @@ $(function () {
         } else {
             $(".navbar").removeClass("bg-danger").addClass("bg-transparent");
         }
-    });    
+    });
 });
 
 function randomIntFromInterval(min, max) {

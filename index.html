@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/baguettebox.js/dist/baguetteBox.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
@@ -79,7 +80,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/slide-1.jpg" alt="First slide">
+                    <img class="d-block w-100" src="img/slide-2.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-light">Slide 1</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur provident voluptate vel
@@ -88,7 +89,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/slide-2.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="img/slide-1.jpg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-light">Slide 2</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur provident voluptate vel
@@ -119,23 +120,25 @@
 
     <div class="container-xl my-5">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right">
                 <img src="img/parrot.png" alt="Parrot" class="img-fluid d-md-block d-none m-auto">
             </div>
             <div class="col-md-6 d-flex flex-column align-self-center text-center">
-                <h1 class="display-3">Welcome</h2>
+                <h1 class="display-3" data-aos="fade-down">Welcome</h1>
+                <div data-aos="fade-up">
                     <span class="text-danger">Nam liber tempor cum soluta nobis eleifend</span>
                     <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rerum magni tempore
                         modi error
                         dolorem facilis nesciunt quasi nostrum totam, perspiciatis enim optio, nisi, quia asperiores
                         fugit eum animi! Neque.</p>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container-fluid px-0">
         <div class="gallery d-flex flex-wrap px-1">
-            <div class="flex-lg-25 flex-md-50 flex-100 px-1">
+            <div class="flex-lg-25 flex-md-50 flex-100 px-1" data-aos="zoom-in-up">
                 <a href="img/gallery1.jpg">
                     <img src="img/gallery1.jpg" alt="Photo 1" class="img-fluid mt-2 mb-0">
                 </a>
@@ -143,7 +146,7 @@
                     <img src="img/gallery5.jpg" alt="Photo 5" class="img-fluid mt-2 mb-0">
                 </a>
             </div>
-            <div class="flex-lg-25 flex-md-50 flex-100 px-1">
+            <div class="flex-lg-25 flex-md-50 flex-100 px-1" data-aos="zoom-in-up">
                 <a href="img/gallery6.jpg">
                     <img src="img/gallery6.jpg" alt="Photo 6" class="img-fluid mt-2 mb-0">
                 </a>
@@ -151,7 +154,7 @@
                     <img src="img/gallery2.jpg" alt="Photo 2" class="img-fluid mt-2 mb-0">
                 </a>
             </div>
-            <div class="flex-lg-25 flex-md-50 flex-100 px-1">
+            <div class="flex-lg-25 flex-md-50 flex-100 px-1" data-aos="zoom-in-up">
                 <a href="img/gallery3.jpg">
                     <img src="img/gallery3.jpg" alt="Photo 3" class="img-fluid mt-2 mb-0">
                 </a>
@@ -159,7 +162,7 @@
                     <img src="img/gallery7.jpg" alt="Photo 7" class="img-fluid mt-2 mb-0">
                 </a>
             </div>
-            <div class="flex-lg-25 flex-md-50 flex-100 px-1">
+            <div class="flex-lg-25 flex-md-50 flex-100 px-1" data-aos="zoom-in-up">
                 <a href="img/gallery8.jpg">
                     <img src="img/gallery8.jpg" alt="Photo 8" class="img-fluid mt-2 mb-0">
                 </a>
@@ -171,18 +174,40 @@
     </div>
 
     <div class="container-xl my-5">
-        <h2 class="display-4 text-center">Services</h2>
+        <h2 class="display-4 text-center" data-aos="zoom-out-up">Services</h2>
         <div class="row services">
             <div class="col">
-                <div class="d-flex flex-row flex-wrap">
-                    <div class="d-block pr-3">
+                <div class="d-flex flex-row flex-wrap service" data-aos="fade-right">
+                    <div class="d-block">
                         <p class="text-danger fw-600 fs-24p">Professional care</p>
                         <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis nam fugit
                             soluta amet perferendis repellat dolore nisi necessitatibus culpa magni earum iste
                             repellendus exercitationem adipisci dolores ut provident, consequatur placeat.</p>
                     </div>
-                    <div class="d-flex align-items-center services-icon">
-                        <i class="fas fa-plus m-auto"></i>
+                    <div class="d-flex align-items-center align-self-center services-icon">
+                        <i class="fas fa-clinic-medical m-auto"></i>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap service" data-aos="fade-left">
+                    <div class="d-block">
+                        <p class="text-danger fw-600 fs-24p">Birds for sale</p>
+                        <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis nam fugit
+                            soluta amet perferendis repellat dolore nisi necessitatibus culpa magni earum iste
+                            repellendus exercitationem adipisci dolores ut provident, consequatur placeat.</p>
+                    </div>
+                    <div class="d-flex align-items-center align-self-center services-icon">
+                        <i class="fas fa-dove m-auto"></i>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap service" data-aos="fade-right">
+                    <div class="d-block">
+                        <p class="text-danger fw-600 fs-24p">Useful articles & advice</p>
+                        <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis nam fugit
+                            soluta amet perferendis repellat dolore nisi necessitatibus culpa magni earum iste
+                            repellendus exercitationem adipisci dolores ut provident, consequatur placeat.</p>
+                    </div>
+                    <div class="d-flex align-items-center align-self-center services-icon">
+                        <i class="fas fa-newspaper m-auto"></i>
                     </div>
                 </div>
             </div>
@@ -193,6 +218,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/baguettebox.js/dist/baguetteBox.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
 
