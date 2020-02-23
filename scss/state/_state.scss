@@ -15,6 +15,10 @@
     max-width: 100%;
 }
 
+.overflow-x-hidden {
+    overflow-x: hidden !important;
+}
+
 @media (min-width: 768px) {
     .w-md-100 {
         width: 100% !important;
