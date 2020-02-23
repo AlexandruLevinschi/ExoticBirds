@@ -1,6 +1,5 @@
 body {
   overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar-track {
@@ -18,6 +17,10 @@ body::-webkit-scrollbar-thumb {
 
 body.loaded {
   overflow-y: auto;
+}
+
+html, body {
+  overflow-x: hidden !important;
 }
 
 .navbar {
@@ -359,6 +362,10 @@ body.loaded {
       -ms-flex: 100%;
           flex: 100%;
   max-width: 100%;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden !important;
 }
 
 @media (min-width: 768px) {
