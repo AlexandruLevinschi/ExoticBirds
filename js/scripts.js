@@ -1,5 +1,6 @@
 $(function () {
     setTimeout(function () {
+        $(".preloader").css("transition", "ease-in-out .5s");
         $("body").addClass("loaded");
         $(window).scrollTop(0);
     }, randomIntFromInterval(500, 1500));
